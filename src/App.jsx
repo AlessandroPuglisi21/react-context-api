@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DefaultLayout from "./layouts/DefaultLayout";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Prodotti from "./pages/Prodotti";
 import NotFound from "./pages/NotFound";
 import BlankLayout from "./layouts/BlankLayout";
 import PostsIndex from "./pages/posts";
@@ -12,6 +10,7 @@ import GlobalContext from "../context/GlobalContext";
 import { BASE_URI } from "./pages/config";
 import { useState } from "react";
 import axios from "axios";
+import PostPage from "./pages/posts/PostPage";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -32,8 +31,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/prodotti" element={<Prodotti />} />
+            <Route path="/post" element={<PostPage />}></Route>
             <Route path="/blog">
               <Route index element={<PostsIndex />} />
               <Route path=":id" element={<PostsShow />} />
