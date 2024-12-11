@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+body{
+    background-color: #969696;
+}
+
+/* ------------------------------------- */
+
+/* HEADER */
+.header {
+    display: flex;          
+    justify-content: space-between; 
+    align-items: center;    
+    padding: 14px 16px;
+    background-color: #f4f4f4;
+    color: black;
+  }
+
+  .header img {
+    width: 150px;
+  }
+  
+  .header div {
+    font-size: 20px; 
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;          
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    font-weight: bold;     
+  }
+  nav li:hover {
+   background-color: rgb(24, 24, 23);
+   color: #f4f4f4;
+   border-radius: 50px;
+   padding: 5px;
+  }
+  
+  /* ------------------------------------- */
+
+  /* HOMEPAGE */
+
+  .homepage {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;      
+    height: 100vh;           
+    background-color: rgb(135, 146, 146); 
+    padding-top: 50px;       
+    box-sizing: border-box;  
+  }
+  .homepage p{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .homepage img {
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+/* --------------------------------- */
+
+/* ABOUT */
+
+.prodotti {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;      
+    height: 100vh;           
+    background-color: rgb(135, 146, 146); 
+    padding-top: 50px;       
+    box-sizing: border-box;  
+  }
+  .prodotti p{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+/* ---------------------------------------- */
+/* FOOTER */
+
+.footer {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+    padding: 14px 16px;
+    background-color: #f4f4f4;
+    color: black;
+  }
+  .footer div {
+    font-size: 20px; 
+    padding: 20px;
+  }
+  
+  footer ul {
+    display: flex;          
+  }
+  
+  footer ul li {
+    margin-right: 20px;
+    font-weight: bold;     
+  }
+  footer li:hover {
+   background-color: rgb(24, 24, 23);
+   color: #f4f4f4;
+   border-radius: 50px;
+   padding: 5px;
+  }
+/* ----------------------------------- */
+
+ /* CARD */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  
+  .card-country {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .diglet-type {
+    margin-bottom: 15px;
+  }
+  
+  .diglet-type h4 {
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  .diglet-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #34495e;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+.deleteButton{
+  background-color: rgb(211, 28, 28);
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+  /* ------------------------------ */
+
+  /* ERROR 404 */
+  .blank-layout{
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+  }
+
+  .back-home-button{
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;  
+    justify-content: space-between; 
+    padding: 1rem;
+    padding: 5rem;
+}
+
+.card-container li {
+    flex: 1 1 calc(25% - 1rem); 
+    list-style-type: none; 
+}
+
+/* ------------------------- */
+
+/* SHOW */
+.mainShow{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 1rem; 
+}
+.showContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0.5rem;
+  background-color: #f8f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.showContainer img{
+  width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.showContainer h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+  justify-content:center ;
+}
+
+.showContainer p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0.5rem 1rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+  background-color: #b38b8b;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.buttonSection{
+  margin-bottom: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #666;
+  gap: 10px;
+}
+.backButton{
+  background-color: rgb(8, 121, 14);
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  
+}
+
+.buttonNewRecipe{
+  background-color: #34495e;
+  
+}
+/* -------------------------------- */
+
+/* FORM */
+
+.mainCreate{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  padding: 1rem; 
+}
+
+.titleFormContainer {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.titleFormContainer .title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group + .form-group {
+  margin-top: 20px;
+}
